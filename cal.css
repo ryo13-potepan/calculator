@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(33, 33, 33);
+}
+
+.calDisplay {
+  width: 400px;
+  height: 100px;
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+
+.numButton {
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  border-color: darkgrey;
+  font-size: 30px;
+  margin: 3px;
+}
+
+.opeButton {
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  border-color: darkgrey;
+  font-size: 30px;
+  margin: 3px;
+  background-color: rgb(63, 250, 203);
+}
+
+#clear {
+  width: 200px;
+  height: 75px;
+  border-radius: 20px;
+  margin: 20px 0 10px 0;
+}
+
+#divide {
+  width: 200px;
+  height: 75px;
+  border-radius: 20px;
+}
+
+#equal {
+  width: 200px;
+  height: 75px;
+  border-radius: 20px;
+}

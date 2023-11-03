@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cal.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="calHeader">電卓</div>
+    <div class="calBody">
+      <input class="calDisplay" id="calDisplay" type="text" value="0" />
+      <div class="c + /">
+        <button class="opeButton" onclick="clickButton(this)">AC</button>
+        <button class="opeButton" onclick="clickButton(this)">&divide;</button>
+      </div>
+
+      <div class="7_9 + *">
+        <button class="numButton" onclick="clickButton(this)">7</button>
+        <button class="numButton" onclick="clickButton(this)">8</button>
+        <button class="numButton" onclick="clickButton(this)">9</button>
+        <button class="opeButton" onclick="clickButton(this)">&times;</button>
+      </div>
+
+      <div class="4_6 + -">
+        <button class="numButton" onclick="clickButton(this)">4</button>
+        <button class="numButton" onclick="clickButton(this)">5</button>
+        <button class="numButton" onclick="clickButton(this)">6</button>
+        <button class="opeButton" onclick="clickButton(this)">&minus;</button>
+      </div>
+
+      <div class="1_3 + +">
+        <button class="numButton" onclick="clickButton(this)">1</button>
+        <button class="numButton" onclick="clickButton(this)">2</button>
+        <button class="numButton" onclick="clickButton(this)">3</button>
+        <button class="opeButton" onclick="clickButton(this)">+</button>
+      </div>
+
+      <div class="0 + . + =">
+        <button class="numButton" onclick="clickButton(this)">0</button>
+        <button class="numButton" onclick="clickButton(this)">.</button>
+        <button class="opeButton" onclick="clickButton(this)">=</button>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>
