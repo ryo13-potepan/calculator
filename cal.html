@@ -12,35 +12,35 @@
     <div class="calBody">
       <input class="calDisplay" id="calDisplay" type="text" value="0" />
       <div>
-        <button class="opeButton" id="opeButton" onclick="clickButton(this)">AC</button>
-        <button class="opeButton" id="opeButton" onclick="clickButton(this,`/`)">/</button>
+        <button class="opeButton"  onclick="allClear(this)">AC</button>
+        <button class="opeButton"  onclick="ope(this)">/</button>
       </div>
 
       <div>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">7</button>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">8</button>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">9</button>
-        <button class="opeButton" id="opeButton" onclick="clickButton(this,`*`)">*</button>
+        <button class="numButton"  onclick="number(this)">7</button>
+        <button class="numButton"  onclick="number(this)">8</button>
+        <button class="numButton"  onclick="number(this)">9</button>
+        <button class="opeButton"  onclick="ope(this)">*</button>
       </div>
 
       <div>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">4</button>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">5</button>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">6</button>
-        <button class="opeButton" id="opeButton" onclick="clickButton(this,`-`)">-</button>
+        <button class="numButton"  onclick="number(this)">4</button>
+        <button class="numButton"  onclick="number(this)">5</button>
+        <button class="numButton"  onclick="number(this)">6</button>
+        <button class="opeButton"  onclick="ope(this)">-</button>
       </div>
 
       <div>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">1</button>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">2</button>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">3</button>
-        <button class="opeButton" id="opeButton" onclick="clickButton(this,`+`)">+</button>
+        <button class="numButton"  onclick="number(this)">1</button>
+        <button class="numButton"  onclick="number(this)">2</button>
+        <button class="numButton"  onclick="number(this)">3</button>
+        <button class="opeButton"  onclick="ope(this)">+</button>
       </div>
 
       <div>
-        <button class="numButton" id="numButton" onclick="clickButton(this)">0</button>
-        <button class="pointButton" id="pointButton"onclick="clickButton(this,`.`)">.</button>
-        <button class="opeButton" id="opeButton" onclick="clickButton(this,`=`)">=</button>
+        <button class="numButton"  onclick="number(this)">0</button>
+        <button class="pointButton" onclick="ope(this)">.</button>
+        <button class="opeButton"  onclick="calc(this)">=</button>
       </div>
     </div>
     <script src="cal.js"></script>

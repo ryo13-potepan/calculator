@@ -1,28 +1,50 @@
 
 const result = document.getElementById("calDisplay");
-const operator = document.getElementById("opeButton");
-const number = document.getElementById("numButton");
 
-//（target）で、イベントが発生した要素を返す
-function clickButton(target) {
+
+function number (target){
+  //押下されたnumberボタンのinnerHTMLをtargetValueに格納
+  let targetValue = target.innerHTML;
+  //確認用
+  console.log(targetValue);
+  //ディスプレイの値が０なら、押下したnumberボタンの値に書き換える
+  if(result.value === "0"){
+    result.value = targetValue;
+  //元が０でないなら、押下した値を連結していく
+  } else {
+    result.value += targetValue;
+  }
+}
+
+function ope(target) {
+  //押下されたopeボタンのinnerHTMLをtargetValueに格納
+  let targetValue = target.innerHTML;
+  //確認用
+  console.log(targetValue);
+  //
+  if(result.value.slice(-1) === "+"){
+    return;
+  } else if(result.value.slice(-1) === "-"){
+    return;
+  } else if(result.value.slice(-1) === "*"){
+    return;
+  } else if(result.value.slice(-1) === "/"){
+    return;
+  } else if(result.value.slice(-1) === "."){
+    return;
+  } else {
+    result.value += targetValue;
+  }
+}
+
+function calc(target){
   let targetValue = target.innerHTML;
   console.log(targetValue);
-  if (targetValue == "AC") {
+  result.value = eval(result.value);
+}
+
+function allClear(target){
+  let targetValue = target.innerHTML;
+  console.log(targetValue);
     result.value = "";
-    } else {
-      if (targetValue == "=") {
-        result.value = eval(result.value);
-      } else {
-        if(result.value == "0") {
-          result.value = targetValue;
-        } else {
-          if (result.value.slice(-1) == `operator`){
-            const o = result.value.slice(0)
-            result.value = o + targetValue;
-          } else if(result.value.slice(-1) == `number`) {
-            result.value += targetValue}
-        }
-      }
-    }
   }
-  
