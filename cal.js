@@ -39,14 +39,12 @@ function ope(target) {
 }
 
 //電卓の計算処理
-function calc(target){
-  let targetValue = target.innerHTML;
-  console.log(targetValue);
+function calc(){
   result.value = eval(result.value);
 }
 
 function allClear(target){
   let targetValue = target.innerHTML;
   console.log(targetValue);
-    result.value = "";
+    result.value = "0";
   }
